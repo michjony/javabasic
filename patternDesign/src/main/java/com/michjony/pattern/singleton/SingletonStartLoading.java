@@ -9,7 +9,7 @@ public class SingletonStartLoading {
      
      private static final SingletonStartLoading sinleton = new SingletonStartLoading();
      
-     public SingletonStartLoading getSingleton(){
+     public static SingletonStartLoading getSingleton(){
     	 return sinleton ;
      }
 }

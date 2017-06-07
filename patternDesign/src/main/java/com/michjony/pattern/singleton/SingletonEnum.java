@@ -9,10 +9,12 @@ public enum SingletonEnum {
 	public Singleton getInstance() {
 		return instance;
 	}
+	
+	class Singleton{
+		private Singleton(){
+			System.out.println("Singleton 实例化"); 
+		}
+	}
 }
 
-class Singleton{
-	Singleton(){
-		System.out.println("Singleton 实例化"); 
-	}
-} 
+

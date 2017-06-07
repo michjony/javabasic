@@ -10,7 +10,7 @@ public class SingletonInnerClass {
 	}
 	
 	//第一次调用时，才会去调用静态内部类初始化单例
-	public SingletonInnerClass getSingleton(){
+	public static  SingletonInnerClass getSingleton(){
 		return SingletonHolder.singleton;
 	}
 }

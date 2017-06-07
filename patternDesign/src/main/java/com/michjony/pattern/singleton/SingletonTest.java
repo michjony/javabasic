@@ -1,5 +1,7 @@
 package com.michjony.pattern.singleton;
 
+import com.michjony.pattern.singleton.SingletonEnum.Singleton;
+
 public class SingletonTest {
 	public static void main(String[] args) {
 		SingletonEnum instance1= SingletonEnum.INSTACE;
