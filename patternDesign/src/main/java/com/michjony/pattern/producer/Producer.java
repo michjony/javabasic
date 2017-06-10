@@ -1,5 +1,6 @@
 package com.michjony.pattern.producer;
 
+import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -33,13 +34,13 @@ public class Producer implements Runnable {
 
 		try {
 			while (isRunning) {
-				TimeUnit.SECONDS.sleep(r.nextInt(10));
+				TimeUnit.SECONDS.sleep(r.nextInt(2));
 				mapdata = new MapData(count.incrementAndGet());
-				System.out.println("current thread-id : " + Thread.currentThread().getId() + " , put mapdata : < "+ mapdata +" >into queue .");
+				System.out.println(new Date() + " ; current thread-id : " + Thread.currentThread().getId() + " , put mapdata : < "+ mapdata +" >into queue .");
 				//Inserts the specified element into this queue, waiting up to the
 			    //specified wait time if necessary for space to become available.
 				if( !queue.offer(mapdata,1,TimeUnit.SECONDS)){
-					System.out.println("failed to put data : " + mapdata);
+					System.out.println(new Date() + " ; failed to put data : " + mapdata);
 				}
 			}
 

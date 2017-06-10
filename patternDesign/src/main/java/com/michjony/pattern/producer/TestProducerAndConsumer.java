@@ -1,5 +1,6 @@
 package com.michjony.pattern.producer;
 
+import java.util.Date;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -33,7 +34,7 @@ public class TestProducerAndConsumer {
 		es.execute(consumer3);
 		es.execute(consumer4);
 		try {
-			TimeUnit.SECONDS.sleep(5);
+			TimeUnit.SECONDS.sleep(1);
 			producer1.stop();
 			producer2.stop();
 			producer3.stop();
@@ -41,9 +42,14 @@ public class TestProducerAndConsumer {
 			e.printStackTrace();
 			Thread.currentThread().interrupt();
 		}
-		es.shutdown();
-		System.out.println(123);
-		Thread.currentThread().stop();
+		//
+		consumer1.stop();
+		System.out.println(new Date() + " ; 123 ");
+		consumer2.stop();
+		consumer3.stop();
+		consumer4.stop();
+		//Thread.currentThread().stop();
 		System.out.println(234);
+		es.shutdownNow();
 	}
 }
