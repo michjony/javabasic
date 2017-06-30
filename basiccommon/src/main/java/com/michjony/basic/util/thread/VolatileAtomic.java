@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class VolatileAtomic extends 	Thread{
 
-	private static volatile AtomicInteger count = new AtomicInteger(0);
+	private static  AtomicInteger count = new AtomicInteger(0);
 	
 	private static void addCount(){
 		for (int i = 0; i < 1000; i++) {
