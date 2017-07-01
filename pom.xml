@@ -10,7 +10,6 @@
 		<module>basiccommon</module>
 		<module>basicbean</module>
 		<module>patternDesign</module>
-		<module>shiroWeb</module>
 	</modules>
 
 	<properties>
