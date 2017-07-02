@@ -9,6 +9,10 @@
   <name>basiccommon</name>
   <dependencies>
   	<dependency>
+		<groupId>com.thoughtworks.xstream</groupId>
+		<artifactId>xstream</artifactId>
+	</dependency>
+  	<dependency>
   		<groupId>com.michjony</groupId>
   		<artifactId>basicbean</artifactId>
   		<version>0.0.1-SNAPSHOT</version>

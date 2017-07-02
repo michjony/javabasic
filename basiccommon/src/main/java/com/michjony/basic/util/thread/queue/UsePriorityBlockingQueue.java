@@ -38,7 +38,6 @@ public class UsePriorityBlockingQueue {
 		q.poll();
 		System.out.println(q);
 		
-		DelayQueue<Delayed> queue = new DelayQueue<>();
 		
 	}
 }

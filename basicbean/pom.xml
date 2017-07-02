@@ -7,4 +7,11 @@
   </parent>
   <artifactId>basicbean</artifactId>
   <name>basicbean</name>
+  
+  <dependencies>
+   	<dependency>
+		<groupId>com.thoughtworks.xstream</groupId>
+		<artifactId>xstream</artifactId>
+	</dependency>
+  </dependencies>
 </project>
