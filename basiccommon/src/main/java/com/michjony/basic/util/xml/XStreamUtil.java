@@ -3,5 +3,7 @@ package com.michjony.basic.util.xml;
 public class XStreamUtil{
 	
 	
-	
+	public static String objToxml(Object obj) {
+		return null;
+	}
 }
