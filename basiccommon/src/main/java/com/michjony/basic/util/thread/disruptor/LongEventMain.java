@@ -20,6 +20,11 @@ public class LongEventMain {
 		//创建工厂
 		LongEventFactory factory = new LongEventFactory();
 		//创建buffersize  就是 RingBuffer的大小   必须为2的N次方
+		/**
+		 * 每次插入时sequence+1 
+		 * 快速获取下一个sequence的逻辑 ： sequence & ( size - 1 ) 
+		 * 2的N次方的size满足 ： size -1 : 每一位都是1
+		 */
 		int ringBufferSize = 1024 * 1024 ;
 		//创建disruptor
 		Disruptor<LongEvent> disruptor = 
@@ -38,7 +43,9 @@ public class LongEventMain {
 		//发布事件
 		RingBuffer<LongEvent> ringBuffer = disruptor.getRingBuffer();
 		
-		LongEventProducer producer = new LongEventProducer(ringBuffer);
+		//LongEventProducer producer = new LongEventProducer(ringBuffer);
+		
+		LongEventProducerWithTranslator producer = new LongEventProducerWithTranslator(ringBuffer);
 		
 		//分配一个字节缓冲区  
 		ByteBuffer bb = ByteBuffer.allocate(8);
