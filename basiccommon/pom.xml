@@ -18,6 +18,10 @@
 			<artifactId>disruptor</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.michjony</groupId>
 			<artifactId>basicbean</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
