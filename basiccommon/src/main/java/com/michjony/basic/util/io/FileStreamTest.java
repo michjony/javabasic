@@ -9,8 +9,11 @@ import java.io.IOException;
 import org.junit.Test;
 
 /**
- * 流的分类： 输入输出流 IO体系 抽象基类 节点流（文件流） InputStream FileInputStream OutputStream
- * FileOutputStream Reader FileReader Writer FileWriter
+ * 流的分类： 输入输出流 IO体系 抽象基类 节点流（文件流） 缓冲流 
+ * InputStream FileInputStream BufferedInputStream 
+ * OutputStream FileOutputStream  BufferedOutputStream
+ * Reader FileReader BufferedReader
+ * Writer FileWriter BufferedWriter
  * 
  * @author Michael-jony
  * @since 2017年10月15日
