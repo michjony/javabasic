@@ -2,6 +2,8 @@ package com.michjony.basic.util.io;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,8 +16,59 @@ import java.io.PrintStream;
 
 import org.junit.Test;
 
+
 public class TestOtherStream {
 
+	/**
+	 * 数据流
+	 */
+	@Test
+	public void dataInputStream(){
+		DataInputStream dis = null;
+		try {
+			dis = new DataInputStream(new FileInputStream(new File("data.txt")));
+//使用这种读取是乱码
+//			byte[] b = new byte[20];
+//			int len ;
+//			while((len = dis.read(b))!=-1){
+//				System.out.println(new String(b,0,len));
+//			}
+			String readUTF = dis.readUTF();
+			System.out.println(readUTF);
+			boolean readBoolean = dis.readBoolean();
+			System.out.println(readBoolean);
+			long readLong = dis.readLong();
+			System.out.println(readLong);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	/**
+	 * 数据流
+	 * 处理基本数据类型，String,字节数组的数据
+	 * DataInputStream DataOutputStream
+	 */
+	@Test
+	public void dataOutputStream(){
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream("data.txt");
+			DataOutputStream dos =new DataOutputStream(fos);
+			dos.writeUTF("i love code");
+			dos.writeBoolean(true);
+			dos.writeLong(156333333);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			IOCloseUtil.close(fos);
+		}
+	}
 	
 	/**
 	 * 打印流
