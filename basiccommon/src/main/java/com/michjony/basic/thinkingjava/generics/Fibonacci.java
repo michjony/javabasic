@@ -13,7 +13,7 @@ public class Fibonacci implements Generator<Integer> {
 
 	private int count = 0;
 
-	public int fib(int n) {
+	private int fib(int n) {
 		if (n < 0) {
 			return 0;
 		}
