@@ -16,4 +16,5 @@ public class New {
 	public static void main(String[] args) {
 		Map<String,List<String>> map = newMap();
 	}
+
 }
