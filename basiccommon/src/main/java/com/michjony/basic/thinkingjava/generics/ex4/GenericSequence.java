@@ -66,4 +66,7 @@ interface Selector {
 	Object current();
 
 	void next();
+
 }
+
+
