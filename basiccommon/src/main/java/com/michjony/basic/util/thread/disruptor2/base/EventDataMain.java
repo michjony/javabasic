@@ -1,4 +1,4 @@
-package com.michjony.basic.util.thread.disruptor2;
+package com.michjony.basic.util.thread.disruptor2.base;
 
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.YieldingWaitStrategy;
@@ -6,7 +6,6 @@ import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
 
 import java.nio.ByteBuffer;
-import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

@@ -1,4 +1,4 @@
-package com.michjony.basic.util.thread.disruptor2;
+package com.michjony.basic.util.thread.disruptor2.base;
 
 import lombok.Data;
 
