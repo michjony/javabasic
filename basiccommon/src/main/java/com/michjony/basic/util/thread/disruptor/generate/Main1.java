@@ -29,7 +29,7 @@ public class Main1 {
 		}, BUFFER_SIZE, new YieldingWaitStrategy());
 		//线程池
 		ExecutorService es = Executors.newFixedThreadPool(THREAD_NUMBERS);
-		//创建SequenceBarrier 序列障碍  
+		//创建SequenceBarrier 序列
 		SequenceBarrier sequenceBarrier = ringBuffer.newBarrier() ;
 		//创建消息处理器
 		BatchEventProcessor<Trade> tProcessor = new BatchEventProcessor<Trade>(

@@ -45,8 +45,9 @@ public class EventDataMain {
         //  发布事件 使用该方法获取具体容器
         RingBuffer<EventData> ringBuffer = disruptor.getRingBuffer();
 
-        EventDataProducer producer = new EventDataProducer(ringBuffer);
+//        EventDataProducer producer = new EventDataProducer(ringBuffer);
 
+        EventDataProducerWithTranslator producer = new EventDataProducerWithTranslator(ringBuffer);
         ByteBuffer byteBuffer = ByteBuffer.allocate(8);
         for (long i = 0; i < 100000; i++) {
             byteBuffer.putLong(0, i);
