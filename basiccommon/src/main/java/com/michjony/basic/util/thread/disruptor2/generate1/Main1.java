@@ -5,8 +5,6 @@ import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.SequenceBarrier;
 import com.lmax.disruptor.YieldingWaitStrategy;
 
-import java.sql.Time;
-import java.util.Timer;
 import java.util.concurrent.*;
 
 /**

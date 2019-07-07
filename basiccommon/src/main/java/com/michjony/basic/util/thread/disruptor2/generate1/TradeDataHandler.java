@@ -13,6 +13,7 @@ public class TradeDataHandler implements EventHandler<TradeData>, WorkHandler<Tr
 
     @Override
     public void onEvent(TradeData event, long sequence, boolean endOfBatch) throws Exception {
+        // 调用本类中的方法
         this.onEvent(event);
     }
 
