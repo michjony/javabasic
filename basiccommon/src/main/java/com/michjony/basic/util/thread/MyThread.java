@@ -10,6 +10,7 @@ public class MyThread extends Thread{
 	@Override
 	public synchronized void run() {
 		System.out.println(Thread.currentThread().getName() + " : " + count);
+
 		count++ ;
 	}
 	
