@@ -73,12 +73,15 @@ public class Main {
     }
 
     static class IntEventExceptionHandler implements ExceptionHandler {
+        @Override
         public void handleEventException(Throwable ex, long sequence, Object event) {
         }
 
+        @Override
         public void handleOnStartException(Throwable ex) {
         }
 
+        @Override
         public void handleOnShutdownException(Throwable ex) {
         }
     }

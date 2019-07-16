@@ -21,15 +21,15 @@ public class ConnectionManager {
 	
 	public static void main(String[] args) {
 		ConnectionManager cm = new ConnectionManager();
-		System.out.println(cm.howManyLeft); //3
-		cm.getConnection();
-		System.out.println(cm.howManyLeft); //2
-		cm.getConnection();
-		System.out.println(cm.howManyLeft); //1
-		cm.getConnection();
-		System.out.println(cm.howManyLeft); //0
-		cm.getConnection();                 // null
-		System.out.println(cm.howManyLeft); //0
+		System.out.println(ConnectionManager.howManyLeft); //3
+		ConnectionManager.getConnection();
+		System.out.println(ConnectionManager.howManyLeft); //2
+		ConnectionManager.getConnection();
+		System.out.println(ConnectionManager.howManyLeft); //1
+		ConnectionManager.getConnection();
+		System.out.println(ConnectionManager.howManyLeft); //0
+		ConnectionManager.getConnection();                 // null
+		System.out.println(ConnectionManager.howManyLeft); //0
 	}
 }
 
@@ -45,6 +45,7 @@ class Connection{
 	public static int howMany(){
 		return count ;
 	}
+	@Override
 	public String toString(){
 		return ("Connection " + count) ;
 	}

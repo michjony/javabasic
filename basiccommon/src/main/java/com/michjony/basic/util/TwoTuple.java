@@ -13,7 +13,8 @@ public class TwoTuple<A, B> {
 		second = b;
 	}
 
-	public String toString() {
+	@Override
+    public String toString() {
 		return "(" + first + "," + second + ")";
 	}
 }

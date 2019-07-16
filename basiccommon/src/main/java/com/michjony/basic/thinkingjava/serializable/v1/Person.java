@@ -26,7 +26,8 @@ public class Person   implements java.io.Serializable{
 	    public void setAge(int value) { age = value; }
 	    public void setSpouse(Person value) { spouse = value; }
 	 
-	    public String toString()
+	    @Override
+        public String toString()
 	    {
 	        return "[Person: firstName=" + firstName + 
 	            " lastName=" + lastName +

@@ -26,7 +26,7 @@ public class AtomicUse extends 	Thread{
 				
 				@Override
 				public void run() {
-					System.out.println(au.multiadd());
+					System.out.println(AtomicUse.multiadd());
 				}
 			}));
 		}

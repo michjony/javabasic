@@ -24,7 +24,8 @@ public class Person implements Serializable{
 	    public void setSpouse(Person value) { spouse = value; }
 	 
 	    
-	    public String toString()
+	    @Override
+        public String toString()
 	    {
 	        return "[Person: firstName=" + firstName + 
 	            " lastName=" + lastName +

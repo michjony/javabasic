@@ -10,6 +10,7 @@ public class Coffee {
 	//final static 修饰成员变量 ， 属于类的变量且只能赋值一次
 	private final static long fsl = si++;
 
+	@Override
 	public String toString() {
 		return this.getClass().getSimpleName() + " " + id + " --- fsl " + fsl;
 	}

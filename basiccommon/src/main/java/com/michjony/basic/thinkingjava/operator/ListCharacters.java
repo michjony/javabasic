@@ -13,9 +13,13 @@ public class ListCharacters {
 		for(int i = 1; i < 10; i++ ) {
 			int factors = 0;
 			for(int j = 1; j < (i + 2)/2; j++ ) {
-				if((i % j) == 0) factors++; 			
+				if((i % j) == 0) {
+					factors++;
+				}
 			}
-			if(factors < 2) System.out.println(i + " is prime");
+			if(factors < 2) {
+				System.out.println(i + " is prime");
+			}
 		}
 		
 		Random rand3 = new Random();
@@ -24,9 +28,13 @@ public class ListCharacters {
 			//	TODO 增加控制台终止程序逻辑 
 			int x = rand3.nextInt(10);
 			int y = rand4.nextInt(10);
-			if(x < y) System.out.println(x + " < " + y);
-			else if(x > y) System.out.println(x + " > " + y);
-			else System.out.println(x + " = " + y);
+			if(x < y) {
+				System.out.println(x + " < " + y);
+			} else if(x > y) {
+				System.out.println(x + " > " + y);
+			} else {
+				System.out.println(x + " = " + y);
+			}
 			break;
 		}
 		

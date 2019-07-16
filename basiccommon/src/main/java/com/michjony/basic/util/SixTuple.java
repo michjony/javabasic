@@ -8,6 +8,7 @@ public class SixTuple<A, B, C, D, E, F> extends FiveTuple<A, B, C, D, E> {
 		sixth = f;
 	}
 
+	@Override
 	public String toString() {
 		return "(" + first + "," + second + "," + third + "," + fourth + "," + fifth + "," + sixth + ")";
 	}

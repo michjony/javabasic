@@ -13,7 +13,8 @@ public class VolatileNoAtomic extends 	Thread{
 		System.out.println(count );
 	}
 	
-	public void run(){
+	@Override
+    public void run(){
 		addCount();
 	}
 

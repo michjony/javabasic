@@ -10,7 +10,8 @@ public class RunThread extends Thread {
 		this.isRunning = isRunning;
 	}
 
-	public void run() {
+	@Override
+    public void run() {
 		System.out.println("進入run");
 		while(isRunning){
 			
