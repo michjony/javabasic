@@ -2,5 +2,8 @@
 .idea
 .setting
 *.iml
-./*/target
+/*/target
+
 *.class
+basicweb/src/test/
+basicweb/target/generated-sources/
