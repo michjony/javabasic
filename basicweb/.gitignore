@@ -1,22 +1,26 @@
-/target/
-/.classpath
-/.project
-/a.JPG
-/abcback.txt
-/b.JPG
-/data.txt
-/hello.txt
-/hello123.txt
-/hello2.txt
-/hello2dest.txt
-/hello3.txt
-/helloencode.txt
-/print.txt
-/property.txt123.txt
-/tempdata.ser
-/test.txt
-/test2.txt
-/test4.txt
-
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
 *.class
-basicweb.iml
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
