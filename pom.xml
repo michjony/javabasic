@@ -17,7 +17,7 @@
         <jdk-version>1.8</jdk-version>
         <project.sourceEncoding>UTF-8</project.sourceEncoding>
         <compiler-version>3.1</compiler-version>
-        <xstream-versoin>1.3.1</xstream-versoin>
+        <xstream-versoin>1.4.15</xstream-versoin>
         <disruptor-versoin>3.3.6</disruptor-versoin>
         <netty-versoin>5.0.0.Alpha2</netty-versoin>
     </properties>
